@@ -1,0 +1,17 @@
+O programa permite ao usuário pesquisar empresas por seu CNPJ ou por sua razão social, utilizando buscas binárias para encontrá-las.
+
+Primeiramente o arquivo é lido para contar o número de linhas que ele possui. Como cada linha contém os dados de uma empresa, consegue-se
+obter o número de empresas a partir do número total de linhas do arquivo. Depois disso, o ponteiro do arquivo é movido para o início do mesmo,
+e aloca-se memória para conter um vetor da struct Empresa. 
+
+Para tentar reduzir o uso de memória, apenas esse vetor é utilizado.  Nesse momento, o arquivo é lido do início novamente, dessa vez para 
+copiar os dados lidos para os elementos do vetor empresas, fazendo as conversões necessárias. Após todo arquivo ser lido, é possível 
+começar a fazer buscas por empresas, bem como imprimir dados de empresas aleatórias. Quando necessário, o vetor é reordenado dependendo 
+se a busca que será realizada a seguir é por CNPJ ou por razão social. Ao final, o programa libera a memória alocada e é encerrado 
+corretamente.
+
+É preciso adicionar o arquivo .csv na pasta e verificar na linha 9 de "main.c" se o nome está igual ao do arquivo.
+
+gcc -ansi -o t2POD main.c empresas.c pesquisa.c
+
+Lucas Both Steinmetz Ribeiro
